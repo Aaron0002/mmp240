@@ -1,0 +1,15 @@
+.container{
+    max-width: 1140px;
+    border: solid 3px #999;
+    padding:32px;
+    padding-top: 16px;
+    margin: 
+}
+
+.orange-color{
+    color:orange;
+}
+
+.fluid-image{
+    width:100%;
+}
