@@ -16,7 +16,20 @@ header{
     width:60%;
     float: left;
 }
-
+.layout{
+    display: grid;
+    grid-template: auto auto auto;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+.lsyout img{
+    width: 100%;
+}
+.one, .five{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 header img{
     max-width:90%; 
 }
@@ -28,12 +41,13 @@ nav{
     float: right;
     width: 30%;
 }
-.menu nav{
+.menu-nav{
      background-color: blue;
     padding: 0.75em;
     padding-left: 1em;
     margin-top: 1em;
     width: 210px;
+    position: absolute;
 }
 body {
     background-color: azure;
@@ -69,13 +83,20 @@ main{
  input{
         border:solid 1px black;
     }
-    .card{
-         flex-grow: 
+.programs{
+        display: flex;
+        flex-wrap: wrap;
+        }
+.card{
+         flex-grow: 1;
          width:300px;
          border: solid 1px #ccc;
          border border-radius:10px;
          margin: 1%; 
 
+}
+.card img{
+    width: 100%;
 }
 
 @media (min-width:768px){
@@ -85,6 +106,9 @@ main{
 }
     .dropdown li{
         display: block;
+    }
+    .menu-button{
+        display: none;
     }
     .menu-nav{
         width: auto;
@@ -99,12 +123,7 @@ main{
     .search{
         margin-top: 1em;
     }
-    .programs{
-        display: flex;
-        flex-wrap: wrap;
-        }
     .card{
-        grid-column: auto
         width: 250px;
         flex-grow: 1;
         flex-shrink: 0;
