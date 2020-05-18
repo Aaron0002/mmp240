@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    border: none;
+    font-family: palatino;
+}
+
+.container{
+ max-width: 1140px;
+ padding: 32px;
+ padding-top: 16px;
+ margin: 32px;
+ background-color: orange
+    
+}
+header{
+    width:60%;
+    float: left;
+}
+.layout{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+.layout img{
+    width: 100%;
+}
+.one, .five{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+header img{
+    max-width:90%; 
+}
+.fluid-img{
+    width: 100%;
+}
+
+nav{
+    float: right;
+    width: 30%;
+}
+.menu-nav{
+     background-color: blue;
+    padding: 0.75em;
+    padding-left: 1em;
+    margin-top: 1em;
+    width: 210px;
+    position: absolute;
+}
+body {
+    background-color: azure;
+}
+
+.menu-button{
+    text-align: right;
+}
+.main-menu ul{
+    /*  display:none;*/
+    list-style-type: none;
+    border: solid 1px #333;
+    background-color: #fff;
+}
+
+
+.orange-color{
+    color: orange;
+}
+
+
+
+.orange-color{
+    color:orange;
+}
+
+.fluid-image{
+    width:100%;
+}
+main{
+    clear: both;
+}
+ input{
+        border:solid 1px black;
+    }
+.programs{
+        display: flex;
+        flex-wrap: wrap;
+        }
+.card{
+         flex-grow: 1;
+         width:300px;
+         border: solid 1px #ccc;
+         border border-radius:10px;
+         margin: 1%; 
+
+}
+.card img{
+    width: 100%;
+}
+.two span{
+    display: block;
+    padding: 8px;
+    text-align:center;
+    background-color: black;
+    color:white;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.three span{
+    display: block;
+    padding: 8px;
+    text-align:center;
+    background-color: black;
+    color:white;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.four span{
+    display: block;
+    padding: 8px;
+    text-align:center;
+    background-color: black;
+    color:white;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+@media (min-width:768px){
+    .main-menu li{
+      display:inline-block;
+        margin-left: 2em;
+}
+    .dropdown li{
+        display: block;
+    }
+    .menu-button{
+        display: none;
+    }
+    .menu-nav{
+        width: auto;
+    }
+    .dropdown ul{
+        display: none;
+    }
+    .dropdown:hover ul{
+        display: block;
+        position: absolute;
+    }
+    .search{
+        margin-top: 1em;
+    }
+    .card{
+        width: 250px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+   
+}
+    
+        
